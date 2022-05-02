@@ -1,7 +1,7 @@
 #! /bin/bash
 chmod ugo+x script-tp3.sh
 crontab -l > statusweb
-echo "0 * * * * ./script-tp3.sh"
+echo "0 * * * * ./script-tp3.sh" >> statusweb
 crontab statusweb
 rm statusweb
 while IFS= read -r site 
